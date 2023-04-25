@@ -1,0 +1,158 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black;
+    overflow-x: hidden;
+}
+.wrapper{
+    margin:auto;
+    padding: 0 1rem;
+}
+.rock-bg{
+    display:block;
+    margin:-2% auto;
+    width:60%;
+    opacity: 1;
+}
+ul {
+    padding-left: 0;
+}
+    
+li{
+    list-style: none;
+    width:fit-content;
+}
+nav{
+    display:flex; 
+    justify-content: center;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    gap:5em;
+    font-size:2rem;
+    position: relative;
+    padding-left: 0;
+    align-items: center;
+
+}
+
+
+img.twitter-logo {
+    width: 1.6em;
+    min-width: 1.8em;
+}
+img.substack-lg{
+    width:1.2em;
+    min-width: 1em;
+}
+.text {
+    color: white;
+    text-align: center;
+    width: 73%;
+
+    font-size: calc(15px + 0.390625vw);
+    color:rgb(235, 224, 212)
+}
+.title-h1{
+  
+}
+.lstn-h1{
+    color:rgb(244, 231, 216);
+    position: relative;
+    border-bottom: solid 5px bisque;
+    font-size: calc(38px + 0.390625vw);
+   
+   
+}
+.disclaimer{
+    color:white;
+    text-align: center;
+    font-size: calc(15px + 0.390625vw);
+}
+.border-text{
+    border: solid 0.3em #706363;
+    margin: 6% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+    width: 85%;
+}
+.biz-box{
+    color:white;
+    background-color: #514f4f;
+    padding: 1em 2em;
+    font-size: calc(15px + 0.390625vw);
+
+}
+.contact{
+    color:white;
+    font-size: calc(15px + 0.390625vw);
+
+}
+.contact-ul{
+    display:flex;
+    gap: 0.5rem;
+    position:relative;
+    top:16%;
+
+}
+.subscribe{
+    position:relative;
+    top:16%;
+}
+.sub-a-link{
+    color:orangered;
+}
+.contact-box {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: calc(10em + 0.390625vw);
+    padding-bottom: 8em;
+}
+.email-contact{
+    color:#2ED1C8;
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh + 40px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    color:white;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  .down-arrow {
+    animation: jumpInfinite 1.5s infinite;
+  }
